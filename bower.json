@@ -1,0 +1,23 @@
+{
+  "name": "videolib",
+  "description": "",
+  "main": "gulp.js",
+  "authors": [
+    "JArek"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-ui-router": "^1.0.15",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "font-awesome": "^5.0.8"
+  }
+}

@@ -1,0 +1,7 @@
+<div class="moviesDiv" ng-controller="nMoviesCtrl" >
+
+  <div class="miniMovie" ng-repeat="m in movies" ng-init="init($index)">
+    <div class="miniMovieHeader" ng-bind-html="m">
+    </div>
+  </div>
+</div>

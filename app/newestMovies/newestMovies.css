@@ -1,0 +1,71 @@
+.moviesDiv{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.miniMovie{
+  background-image: url(../../img/img1.jpg);
+  background-position: center;
+  width: 400px;
+  height: 200px;
+  margin: 20px 20px;
+  position: relative;
+}
+.miniMovieHeader{
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
+  font-size: 1em;
+  color: #fff;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.mainTit{
+  position: absolute;
+  opacity: 1;
+  font-size: 1.2em;
+}
+.secondTit{
+  position: absolute;
+  opacity: 0;
+  font-size: 1.2em;
+
+}
+
+.mainTit:hover{
+  opacity: 0;
+}
+.secondTit:hover{
+  opacity: 1;
+}
+
+.loadMoreVids{
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+}
+.loadMoreVidsBtn{
+  background-color: #fff;
+  border: 0;
+}
+.loadMoreVidsBtn:focus,.loadMoreVidsBtn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.loadMoreVidsBtn:hover{
+  cursor: pointer;
+}

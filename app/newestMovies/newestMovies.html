@@ -1,0 +1,8 @@
+<div class="moviesDiv">
+
+  <a ui-sref="movie({movie_id:nm.movieId})" class="miniMovie" ng-repeat="nm in nMovies | orderBy:'$index':true | limitTo:vidsOnSite" >
+    <div  class="miniMovieHeader" title="{{nm.name}}">{{nm.name}}
+    </div>
+  </a>
+</div>
+<div class="loadMoreVids"><button class="loadMoreVidsBtn" ng-click="loadMore()">Wiecej...</button></div>

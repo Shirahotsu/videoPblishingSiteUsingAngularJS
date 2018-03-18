@@ -1,0 +1,7 @@
+<div  class="categoryMainDiv">
+
+  <a ng-href="category.php?id=cat{{$index}} " class="categoryMin" ng-repeat="c in categories" ng-mouseover="setCatNum($index)" ng-mouseleave="reset()">
+    <div ng-class="{ opacityClass: $index == catNum }" class="categoryMinHeader"> {{c}}</div>
+  </a>
+
+</div>

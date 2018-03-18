@@ -1,0 +1,41 @@
+.movie{
+    display: flex;
+    justify-content: space-around;
+}
+.movieDiv{
+    width: 66%;
+    height: 100%;
+    position: relative;
+    left: 80px;
+
+ }
+.video{
+    position: absolute;
+    top: 0;
+    height: 720px;
+    width: 1280px;
+    background-color: #040505;
+    width: 1280px;
+}
+.movieInfo{
+    position: absolute;
+    top: 720px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.movieTitle{
+    font-size: 2em;
+}
+movieInnerInfo{
+    width: 100%;
+
+}
+.lText{
+    color: #464a4e;
+}
+.randomMovCatDiv{
+    width: 33%;
+}
