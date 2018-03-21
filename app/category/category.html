@@ -1,7 +1,8 @@
-<div  class="categoryMainDiv">
+<div class="moviesDiv">
 
-  <a ng-href="category.php?id=cat{{$index}} " class="categoryMin" ng-repeat="c in categories" ng-mouseover="setCatNum($index)" ng-mouseleave="reset()">
-    <div ng-class="{ opacityClass: $index == catNum }" class="categoryMinHeader"> {{c}}</div>
-  </a>
-
+    <a ui-sref="movie({movie_id:ct.movieId})" class="miniMovie" ng-repeat="ct in category | orderBy:'$index':true | limitTo:vidsOnSite" >
+        <div  class="miniMovieHeader" title="{{ct.name}}">{{ct.name}}{{ct.info}}
+        </div>
+    </a>
 </div>
+<div class="loadMoreVids"><button class="loadMoreVidsBtn" ng-click="loadMore()">Wiecej...</button></div>

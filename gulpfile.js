@@ -1,14 +1,13 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-gulp.task('reload', function () {
-    browserSync.reload();
+
+var gulp = require('gulp'),
+    gpConcat = require('gulp-concat');
+
+gulp.task('js', function () {
+    return gulp.src(['app/**/routing.js', 'app/**/!(routing)*.js'])
+        .pipe(gpConcat('script.js'))
+        .pipe(gulp.dest('app/main'))
 });
 
-gulp.task('serve', function () {
-    browserSync({
-        server: 'app'
-    });
-    gulp.watch('app*.html', ['reload']);
+gulp.task('watchjs' , function () {
+    gulp.watch(['app/**/routing.js', 'app/**/!(routing)*js'], ['js']);
 });
-
-gulp.task('default',['serve']);

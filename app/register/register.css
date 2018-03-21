@@ -1,0 +1,44 @@
+.formDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.registerForm{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+
+}
+.inputFiled{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputSpecific{
+    border: 0;
+    border-bottom: #7a43b6 1px solid;
+}
+.inputSpecific:focus{
+    outline: 0;
+}
+
+.formInputInfo{
+    font-size: 2em;
+    font-variant: small-caps;
+}
+.registerBtn
+{
+    background-color:#7a43b6;
+    color: #fff;
+    font-size: 1.3em;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+}

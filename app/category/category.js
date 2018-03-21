@@ -1,27 +1,9 @@
-    angular.module('app')
-    .controller("categoryCtrl",function ($scope, $http) {
-    $scope.categories= [
-        "Muzyka",
-        "Gry",
-        "Dokumentalne",
-        "Moda",
-        "Sport",
-        "Motoryzacja",
-        "Filozofia",
-        "Religia",
-        "Elektronika",
-        "Vlogi",
-        "Śmieszne",
-        "Nauka",
-        "Przyroda"
+angular.module("app")
+    .controller("categoryCrl",function ($scope, $http, Category){
+        $scope.category = Category.data.records;
+        $scope.vidsOnSite = 10;
+        $scope.loadMore = function () {
+            $scope.vidsOnSite += 10;
+        }
 
-    ];
-    $scope.catNum = NaN;
-    $scope.setCatNum = function(i) {
-        $scope.catNum = i;
-    };
-    $scope.reset = function() {
-        $scope.catNum = NaN;
-    }
-
-});
+    });
